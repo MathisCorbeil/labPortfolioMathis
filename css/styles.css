@@ -39,7 +39,7 @@ width: 1000px;
 background-color: rgba(15, 38, 49, 95%);
 position: fixed;
 top:0;
-left:calc(500px);
+left:calc(50% - 500px);
 z-index: 1;
 border-radius: 0 0 20px 20px;
 }
@@ -71,6 +71,7 @@ max-width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 45px;
     list-style: none;
+    padding: 0;
    
 }
 
