@@ -1,0 +1,159 @@
+/*--------------------------
+BASE
+----------------------------*/
+
+
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+/*------------------------
+ÉLÉMENTS
+-------------------------*/
+
+body{
+
+    font:bold "Averia Serif Libre";
+    color: #eca136;
+    background-color: rgb(9,26,33);
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*------------------
+COMPONENTS
+-------------------*/
+
+/*--header--*/
+
+header{
+width: 1000px;
+background-color: rgba(15, 38, 49, 95%);
+position: fixed;
+top:0;
+left:calc(500px);
+z-index: 1;
+border-radius: 0 0 20px 20px;
+}
+h1{
+    font-size: 4rem;
+    
+}
+header .wrapper{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--contenu pricipale--*/
+
+.contenu{
+    max-width: 925px;
+    margin: 100px auto 0;
+}
+
+img{
+max-width: 100%;
+
+}
+
+.contenu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    list-style: none;
+   
+}
+
+.contenu li{
+    padding: 20px;
+     background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+    position: relative;
+}
+
+.bouton{
+     background-color: rgba(255, 255, 255, 50%);
+     width: 30px;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 0 0 0 5px;
+     position: absolute;
+     bottom: 278px;
+     right: 20px;
+}
+.bouton:hover{
+    
+}
+
+/*footer*/
+
+footer .wrapper {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 38, 49, 95%);
+    border-radius:  15px 15px 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.media{
+    background-color: rgb(15,38,49);
+    border-radius:  0 15px 15px 0 ;
+
+    position: fixed;
+    top:200px;
+    left:0;
+}
+
+.media ul img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.media ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.media ul img:hover{
+    position: relative;
+    left: 3px;
+}
+
+img.zoom{
+    width: 800px;
+    height: 600px;
+    cursor: grab;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+div.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
